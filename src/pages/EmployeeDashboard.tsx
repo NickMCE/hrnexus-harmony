@@ -43,19 +43,19 @@ export default function EmployeeDashboard() {
         <div className="space-y-4">
           <h2 className="text-xl font-semibold">Quick Actions</h2>
           <div className="grid gap-2">
-            <Button variant="outline" className="justify-start w-full">
+            <Button variant="outline" className="justify-start w-full" onClick={() => navigate('/leave-request')}>
               <Calendar className="mr-2 h-4 w-4" />
               Request Leave
             </Button>
-            <Button variant="outline" className="justify-start w-full">
+            <Button variant="outline" className="justify-start w-full" onClick={() => navigate('/expense-submission')}>
               <DollarSign className="mr-2 h-4 w-4" />
               Submit Expense
             </Button>
-            <Button variant="outline" className="justify-start w-full">
+            <Button variant="outline" className="justify-start w-full" onClick={() => navigate('/documents')}>
               <FileText className="mr-2 h-4 w-4" />
               View Documents
             </Button>
-            <Button variant="outline" className="justify-start w-full">
+            <Button variant="outline" className="justify-start w-full" onClick={() => navigate('/performance-goals')}>
               <Award className="mr-2 h-4 w-4" />
               Performance Goals
             </Button>

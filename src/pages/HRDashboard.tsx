@@ -44,19 +44,19 @@ export default function HRDashboard() {
         <div className="space-y-4">
           <h2 className="text-xl font-semibold">Quick Actions</h2>
           <div className="grid gap-2">
-            <Button variant="outline" className="justify-start w-full">
+            <Button variant="outline" className="justify-start w-full" onClick={() => navigate('/add-employee')}>
               <Plus className="mr-2 h-4 w-4" />
               Add New Employee
             </Button>
-            <Button variant="outline" className="justify-start w-full">
+            <Button variant="outline" className="justify-start w-full" onClick={() => navigate('/leave-request')}>
               <Calendar className="mr-2 h-4 w-4" />
               Review Leave Requests
             </Button>
-            <Button variant="outline" className="justify-start w-full">
+            <Button variant="outline" className="justify-start w-full" onClick={() => navigate('/payroll')}>
               <DollarSign className="mr-2 h-4 w-4" />
               Manage Payroll
             </Button>
-            <Button variant="outline" className="justify-start w-full">
+            <Button variant="outline" className="justify-start w-full" onClick={() => navigate('/performance-reviews')}>
               <Award className="mr-2 h-4 w-4" />
               Performance Reviews
             </Button>
